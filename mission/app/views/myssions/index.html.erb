@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Myssions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Risk value</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @myssions.each do |myssion| %>
+      <tr>
+        <td><%= myssion.description %></td>
+        <td><%= myssion.risk_value %></td>
+        <td><%= myssion.location %></td>
+        <td><%= link_to 'Show', myssion %></td>
+        <td><%= link_to 'Edit', edit_myssion_path(myssion) %></td>
+        <td><%= link_to 'Destroy', myssion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Myssion', new_myssion_path %>

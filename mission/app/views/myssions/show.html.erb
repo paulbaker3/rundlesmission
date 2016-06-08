@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @myssion.description %>
+</p>
+
+<p>
+  <strong>Risk value:</strong>
+  <%= @myssion.risk_value %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @myssion.location %>
+</p>
+
+<%= link_to 'Edit', edit_myssion_path(@myssion) %> |
+<%= link_to 'Back', myssions_path %>
+<%= link_to 'New Objective', new_objective_myssion_path(@myssion) %>

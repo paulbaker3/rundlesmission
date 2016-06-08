@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @objective.target %>
+</p>
+
+<p>
+  <strong>Bounty:</strong>
+  <%= @objective.bounty %>
+</p>
+
+<p>
+  <strong>Myssion:</strong>
+  <%= @objective.myssion %>
+</p>
+
+<%= link_to 'Edit', edit_objective_path(@objective) %> |
+<%= link_to 'Back', objectives_path %>

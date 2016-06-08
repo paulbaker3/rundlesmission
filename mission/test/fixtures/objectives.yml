@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  targe: MyString
+  bounty: 1
+  myssion_id: 
+
+two:
+  targe: MyString
+  bounty: 1
+  myssion_id: 
